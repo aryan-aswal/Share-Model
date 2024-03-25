@@ -1,0 +1,133 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #000000;
+}
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.modal {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 25vw;
+    height: 60vh;
+    border: 2px solid #ffffff30;
+    background-color: #ffffff1a;
+    border-radius: 10px;
+}
+.image-class{
+    width: 50%;
+    height: 37%;
+    background-image: url('myPic.png');
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+.name {
+    color: #ffffff;
+}
+.bio{
+    color: #5f5f5f;
+}
+button{
+    margin: 5px;
+    padding: 10px;
+    width: 160px;
+    border: #ffffffb9 solid 1px;
+    background-color: #ffffff1a;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+button:hover{
+    background-color: #ffffffb9;
+    color: #000000;
+}
+.pop-up-modal{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    border: 2px solid #ffffff59;
+    width: 500px;
+    background: #00000088;
+    backdrop-filter: blur(10px);
+    color: white;
+    z-index: 1;
+    padding: 20px 25px;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+}
+h3{
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.icons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.icons i{
+    border: 1px solid #ffffff88;
+    padding: 17px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+    gap: 10px;
+    justify-content: center;
+    transition: all 0.5s;
+    margin-bottom: 25px;
+    text-decoration: none;
+    font-size: 27px;
+}
+.icons i:hover{
+    cursor: pointer;
+}
+#fb:hover{
+    background-color: #1771e6;
+}
+#ig:hover{
+    background-color: #cb2770;
+}
+#twitter:hover{
+    background-color: #0081c2;
+}
+#whatsapp:hover{
+    background-color: #2fe664;
+}
+#telegram:hover{
+    background-color: #1c99e6;
+}
+.cross:hover{
+    cursor: pointer;
+}
